@@ -1,0 +1,424 @@
+---
+kind: ObjectType
+version: v1
+definition:
+  name: Lead
+  description: No description available
+  fields:
+    - name: AnnualRevenue
+      type: Float
+      description: No description available
+    - name: City
+      type: String
+      description: No description available
+    - name: Company
+      type: String
+      description: No description available
+    - name: ConvertedAccountId
+      type: String
+      description: No description available
+    - name: ConvertedContactId
+      type: String
+      description: No description available
+    - name: ConvertedDate
+      type: Timestamp
+      description: No description available
+    - name: ConvertedOpportunityId
+      type: String
+      description: No description available
+    - name: Country
+      type: String
+      description: No description available
+    - name: CreatedById
+      type: String
+      description: No description available
+    - name: CreatedDate
+      type: Timestamp
+      description: No description available
+    - name: Email
+      type: String
+      description: No description available
+    - name: FirstName
+      type: String
+      description: No description available
+    - name: Id
+      type: String
+      description: No description available
+    - name: Industry
+      type: String
+      description: No description available
+    - name: IsConverted
+      type: Boolean
+      description: No description available
+    - name: IsDeleted
+      type: Boolean
+      description: No description available
+    - name: LastModifiedById
+      type: String
+      description: No description available
+    - name: LastModifiedDate
+      type: Timestamp
+      description: No description available
+    - name: LastName
+      type: String
+      description: No description available
+    - name: LeadSource
+      type: String
+      description: No description available
+    - name: Name
+      type: String
+      description: No description available
+    - name: NumberOfEmployees
+      type: Int
+      description: No description available
+    - name: Phone
+      type: String
+      description: No description available
+    - name: PostalCode
+      type: String
+      description: No description available
+    - name: Rating
+      type: String
+      description: No description available
+    - name: Salutation
+      type: String
+      description: No description available
+    - name: State
+      type: String
+      description: No description available
+    - name: Status
+      type: String
+      description: No description available
+    - name: Street
+      type: String
+      description: No description available
+    - name: SystemModstamp
+      type: Timestamp
+      description: No description available
+    - name: Title
+      type: String
+      description: No description available
+    - name: Website
+      type: String
+      description: No description available
+  graphql:
+    typeName: Lead
+    inputTypeName: Lead_input
+  dataConnectorTypeMapping:
+    - dataConnectorName: myduckduckapi
+      dataConnectorObjectType: Lead
+
+---
+kind: TypePermissions
+version: v1
+definition:
+  typeName: Lead
+  permissions:
+    - role: admin
+      output:
+        allowedFields:
+          - AnnualRevenue
+          - City
+          - Company
+          - ConvertedAccountId
+          - ConvertedContactId
+          - ConvertedDate
+          - ConvertedOpportunityId
+          - Country
+          - CreatedById
+          - CreatedDate
+          - Email
+          - FirstName
+          - Id
+          - Industry
+          - IsConverted
+          - IsDeleted
+          - LastModifiedById
+          - LastModifiedDate
+          - LastName
+          - LeadSource
+          - Name
+          - NumberOfEmployees
+          - Phone
+          - PostalCode
+          - Rating
+          - Salutation
+          - State
+          - Status
+          - Street
+          - SystemModstamp
+          - Title
+          - Website
+
+---
+kind: BooleanExpressionType
+version: v1
+definition:
+  name: Lead_bool_exp
+  operand:
+    object:
+      type: Lead
+      comparableFields:
+        - fieldName: AnnualRevenue
+          booleanExpressionType: Float_bool_exp
+        - fieldName: City
+          booleanExpressionType: String_bool_exp
+        - fieldName: Company
+          booleanExpressionType: String_bool_exp
+        - fieldName: ConvertedAccountId
+          booleanExpressionType: String_bool_exp
+        - fieldName: ConvertedContactId
+          booleanExpressionType: String_bool_exp
+        - fieldName: ConvertedDate
+          booleanExpressionType: Timestamp_bool_exp
+        - fieldName: ConvertedOpportunityId
+          booleanExpressionType: String_bool_exp
+        - fieldName: Country
+          booleanExpressionType: String_bool_exp
+        - fieldName: CreatedById
+          booleanExpressionType: String_bool_exp
+        - fieldName: CreatedDate
+          booleanExpressionType: Timestamp_bool_exp
+        - fieldName: Email
+          booleanExpressionType: String_bool_exp
+        - fieldName: FirstName
+          booleanExpressionType: String_bool_exp
+        - fieldName: Id
+          booleanExpressionType: String_bool_exp
+        - fieldName: Industry
+          booleanExpressionType: String_bool_exp
+        - fieldName: IsConverted
+          booleanExpressionType: Boolean_bool_exp
+        - fieldName: IsDeleted
+          booleanExpressionType: Boolean_bool_exp
+        - fieldName: LastModifiedById
+          booleanExpressionType: String_bool_exp
+        - fieldName: LastModifiedDate
+          booleanExpressionType: Timestamp_bool_exp
+        - fieldName: LastName
+          booleanExpressionType: String_bool_exp
+        - fieldName: LeadSource
+          booleanExpressionType: String_bool_exp
+        - fieldName: Name
+          booleanExpressionType: String_bool_exp
+        - fieldName: NumberOfEmployees
+          booleanExpressionType: Int_bool_exp
+        - fieldName: Phone
+          booleanExpressionType: String_bool_exp
+        - fieldName: PostalCode
+          booleanExpressionType: String_bool_exp
+        - fieldName: Rating
+          booleanExpressionType: String_bool_exp
+        - fieldName: Salutation
+          booleanExpressionType: String_bool_exp
+        - fieldName: State
+          booleanExpressionType: String_bool_exp
+        - fieldName: Status
+          booleanExpressionType: String_bool_exp
+        - fieldName: Street
+          booleanExpressionType: String_bool_exp
+        - fieldName: SystemModstamp
+          booleanExpressionType: Timestamp_bool_exp
+        - fieldName: Title
+          booleanExpressionType: String_bool_exp
+        - fieldName: Website
+          booleanExpressionType: String_bool_exp
+      comparableRelationships: []
+  logicalOperators:
+    enable: true
+  isNull:
+    enable: true
+  graphql:
+    typeName: Lead_bool_exp
+
+---
+kind: AggregateExpression
+version: v1
+definition:
+  name: Lead_agg_exp
+  operand:
+    object:
+      aggregatedType: Lead
+      aggregatableFields:
+        - fieldName: AnnualRevenue
+          aggregateExpression: Float_agg_exp
+        - fieldName: City
+          aggregateExpression: String_agg_exp
+        - fieldName: Company
+          aggregateExpression: String_agg_exp
+        - fieldName: ConvertedAccountId
+          aggregateExpression: String_agg_exp
+        - fieldName: ConvertedContactId
+          aggregateExpression: String_agg_exp
+        - fieldName: ConvertedDate
+          aggregateExpression: Timestamp_agg_exp
+        - fieldName: ConvertedOpportunityId
+          aggregateExpression: String_agg_exp
+        - fieldName: Country
+          aggregateExpression: String_agg_exp
+        - fieldName: CreatedById
+          aggregateExpression: String_agg_exp
+        - fieldName: CreatedDate
+          aggregateExpression: Timestamp_agg_exp
+        - fieldName: Email
+          aggregateExpression: String_agg_exp
+        - fieldName: FirstName
+          aggregateExpression: String_agg_exp
+        - fieldName: Id
+          aggregateExpression: String_agg_exp
+        - fieldName: Industry
+          aggregateExpression: String_agg_exp
+        - fieldName: IsConverted
+          aggregateExpression: Boolean_agg_exp
+        - fieldName: IsDeleted
+          aggregateExpression: Boolean_agg_exp
+        - fieldName: LastModifiedById
+          aggregateExpression: String_agg_exp
+        - fieldName: LastModifiedDate
+          aggregateExpression: Timestamp_agg_exp
+        - fieldName: LastName
+          aggregateExpression: String_agg_exp
+        - fieldName: LeadSource
+          aggregateExpression: String_agg_exp
+        - fieldName: Name
+          aggregateExpression: String_agg_exp
+        - fieldName: NumberOfEmployees
+          aggregateExpression: Int_agg_exp
+        - fieldName: Phone
+          aggregateExpression: String_agg_exp
+        - fieldName: PostalCode
+          aggregateExpression: String_agg_exp
+        - fieldName: Rating
+          aggregateExpression: String_agg_exp
+        - fieldName: Salutation
+          aggregateExpression: String_agg_exp
+        - fieldName: State
+          aggregateExpression: String_agg_exp
+        - fieldName: Status
+          aggregateExpression: String_agg_exp
+        - fieldName: Street
+          aggregateExpression: String_agg_exp
+        - fieldName: SystemModstamp
+          aggregateExpression: Timestamp_agg_exp
+        - fieldName: Title
+          aggregateExpression: String_agg_exp
+        - fieldName: Website
+          aggregateExpression: String_agg_exp
+  count:
+    enable: true
+  graphql:
+    selectTypeName: Lead_agg_exp
+
+---
+kind: OrderByExpression
+version: v1
+definition:
+  name: Lead_order_by_exp
+  operand:
+    object:
+      orderedType: Lead
+      orderableFields:
+        - fieldName: AnnualRevenue
+          orderByExpression: Float_order_by_exp
+        - fieldName: City
+          orderByExpression: String_order_by_exp
+        - fieldName: Company
+          orderByExpression: String_order_by_exp
+        - fieldName: ConvertedAccountId
+          orderByExpression: String_order_by_exp
+        - fieldName: ConvertedContactId
+          orderByExpression: String_order_by_exp
+        - fieldName: ConvertedDate
+          orderByExpression: Timestamp_order_by_exp
+        - fieldName: ConvertedOpportunityId
+          orderByExpression: String_order_by_exp
+        - fieldName: Country
+          orderByExpression: String_order_by_exp
+        - fieldName: CreatedById
+          orderByExpression: String_order_by_exp
+        - fieldName: CreatedDate
+          orderByExpression: Timestamp_order_by_exp
+        - fieldName: Email
+          orderByExpression: String_order_by_exp
+        - fieldName: FirstName
+          orderByExpression: String_order_by_exp
+        - fieldName: Id
+          orderByExpression: String_order_by_exp
+        - fieldName: Industry
+          orderByExpression: String_order_by_exp
+        - fieldName: IsConverted
+          orderByExpression: Boolean_order_by_exp
+        - fieldName: IsDeleted
+          orderByExpression: Boolean_order_by_exp
+        - fieldName: LastModifiedById
+          orderByExpression: String_order_by_exp
+        - fieldName: LastModifiedDate
+          orderByExpression: Timestamp_order_by_exp
+        - fieldName: LastName
+          orderByExpression: String_order_by_exp
+        - fieldName: LeadSource
+          orderByExpression: String_order_by_exp
+        - fieldName: Name
+          orderByExpression: String_order_by_exp
+        - fieldName: NumberOfEmployees
+          orderByExpression: Int_order_by_exp
+        - fieldName: Phone
+          orderByExpression: String_order_by_exp
+        - fieldName: PostalCode
+          orderByExpression: String_order_by_exp
+        - fieldName: Rating
+          orderByExpression: String_order_by_exp
+        - fieldName: Salutation
+          orderByExpression: String_order_by_exp
+        - fieldName: State
+          orderByExpression: String_order_by_exp
+        - fieldName: Status
+          orderByExpression: String_order_by_exp
+        - fieldName: Street
+          orderByExpression: String_order_by_exp
+        - fieldName: SystemModstamp
+          orderByExpression: Timestamp_order_by_exp
+        - fieldName: Title
+          orderByExpression: String_order_by_exp
+        - fieldName: Website
+          orderByExpression: String_order_by_exp
+      orderableRelationships: []
+  graphql:
+    expressionTypeName: Lead_order_by_exp
+
+---
+kind: Model
+version: v2
+definition:
+  name: Lead
+  objectType: Lead
+  source:
+    dataConnectorName: myduckduckapi
+    collection: Lead
+  filterExpressionType: Lead_bool_exp
+  aggregateExpression: Lead_agg_exp
+  orderByExpression: Lead_order_by_exp
+  graphql:
+    selectMany:
+      queryRootField: Lead
+      subscription:
+        rootField: Lead
+    selectUniques: []
+    filterInputTypeName: Lead_filter_input
+    aggregate:
+      queryRootField: Lead_aggregate
+      subscription:
+        rootField: Lead_aggregate
+  description: No description available
+
+---
+kind: ModelPermissions
+version: v1
+definition:
+  modelName: Lead
+  permissions:
+    - role: admin
+      select:
+        filter: null
+        allowSubscriptions: true
+

@@ -1,5 +1,6 @@
+---
 kind: AuthConfig
-version: v2
+version: v3
 definition:
   mode:
     jwt:
@@ -15,3 +16,4 @@ definition:
           algorithm: RS256
           key:
             valueFromEnv: JWT_PUBLIC_KEY
+

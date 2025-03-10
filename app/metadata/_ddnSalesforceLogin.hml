@@ -37,7 +37,7 @@ definition:
 kind: Command
 version: v1
 definition:
-  name: _ddnZendeskLogin
+  name: _ddnSalesforceLogin
   outputType: DDNJobStatusV1!
   arguments:
     - name: req
@@ -47,17 +47,17 @@ definition:
   source:
     dataConnectorName: myduckduckapi
     dataConnectorCommand:
-      procedure: _ddnZendeskLogin
+      procedure: _ddnSalesforceLogin
   graphql:
-    rootFieldName: _ddnZendeskLogin
+    rootFieldName: _ddnSalesforceLogin
     rootFieldKind: Mutation
-  description: $ddn.functions.zendeskLogin
+  description: $ddn.functions.salesforceLogin
 
 ---
 kind: CommandPermissions
 version: v1
 definition:
-  commandName: _ddnZendeskLogin
+  commandName: _ddnSalesforceLogin
   permissions:
     - role: admin
       allowExecution: true

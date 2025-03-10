@@ -1,10 +1,15 @@
 import { JSONValue, InternalServerError } from "@hasura/ndc-lambda-sdk";
 import { exchangeOAuthCodeForToken } from "@hasura/ndc-duckduckapi";
 
-export const ZENDESK_CLIENT_ID = process.env.ZENDESK_CLIENT_ID!;
-if (!ZENDESK_CLIENT_ID) {
-  throw new Error("ZENDESK_CLIENT_ID is not set");
+export const SALESFORCE_CLIENT_ID = process.env.SALESFORCE_CLIENT_ID!;
+if (!SALESFORCE_CLIENT_ID) {
+  throw new Error("SALESFORCE_CLIENT_ID is not set");
 }
+
+export const AUTHORIZATION_ENDPOINT =
+  "https://login.salesforce.com/services/oauth2/authorize";
+
+const TOKEN_ENDPOINT = "https://login.salesforce.com/services/oauth2/token";
 
 export function getTenantIdFromHeaders(headers: JSONValue): string {
   if (!headers) throw new InternalServerError("Header forwarding not enabled");
@@ -15,17 +20,17 @@ export function getTenantIdFromHeaders(headers: JSONValue): string {
   return (headers.value as any)?.[tenantIdPropertyName.toLowerCase()];
 }
 
-export async function exchangeZendeskOAuthCodeForToken(req: {
+export async function exchangeSalesforceOAuthCode(req: {
   code: string;
-  tokenEndpoint: string;
   codeVerifier?: string;
   redirectUri: string;
 }) {
   const data = await exchangeOAuthCodeForToken({
     ...req,
-    clientId: ZENDESK_CLIENT_ID,
-    clientSecret: process.env.ZENDESK_CLIENT_SECRET,
+    tokenEndpoint: TOKEN_ENDPOINT,
+    clientId: SALESFORCE_CLIENT_ID,
+    clientSecret: process.env.SALESFORCE_CLIENT_SECRET,
   });
 
-  return data.access_token as string;
+  return data;
 }

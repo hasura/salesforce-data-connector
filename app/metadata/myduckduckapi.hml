@@ -284,6 +284,1575 @@ definition:
                 type: named
                 name: UHugeInt
       object_types:
+        Account:
+          description: No description available
+          fields:
+            AccountSource:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            AnnualRevenue:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            BillingCity:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            BillingCountry:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            BillingGeocodeAccuracy:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            BillingLatitude:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            BillingLongitude:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            BillingPostalCode:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            BillingState:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            BillingStreet:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CreatedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CreatedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Description:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Fax:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            FirstName:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Id:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Industry:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            IsDeleted:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsPersonAccount:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            Jigsaw:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            JigsawCompanyId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LastActivityDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastModifiedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LastModifiedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastName:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LastReferencedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastViewedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            MasterRecordId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Name:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            NumberOfEmployees:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Int
+            OwnerId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ParentId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Phone:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            PhotoUrl:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            RecordTypeId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Salutation:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ShippingCity:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ShippingCountry:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ShippingGeocodeAccuracy:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ShippingLatitude:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            ShippingLongitude:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            ShippingPostalCode:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ShippingState:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ShippingStreet:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            SicDesc:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            SystemModstamp:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Type:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Website:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+        Campaign:
+          description: No description available
+          fields:
+            ActualCost:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            AmountAllOpportunities:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            AmountWonOpportunities:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            BudgetedCost:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            CampaignMemberRecordTypeId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CreatedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CreatedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Description:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            EndDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            ExpectedResponse:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            ExpectedRevenue:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            Id:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            IsActive:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsDeleted:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            LastActivityDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastModifiedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LastModifiedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastReferencedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastViewedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Name:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            NumberOfContacts:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Int
+            NumberOfConvertedLeads:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Int
+            NumberOfLeads:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Int
+            NumberOfOpportunities:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Int
+            NumberOfResponses:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Int
+            NumberOfWonOpportunities:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Int
+            NumberSent:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            OwnerId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ParentId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            StartDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Status:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            SystemModstamp:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Type:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+        CampaignMember:
+          description: No description available
+          fields:
+            CampaignId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            City:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CompanyOrAccount:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ContactId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Country:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CreatedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CreatedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Description:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            DoNotCall:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            Email:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Fax:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            FirstName:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            FirstRespondedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            HasOptedOutOfEmail:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            HasOptedOutOfFax:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            HasResponded:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            Id:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            IsDeleted:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            LastModifiedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LastModifiedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastName:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LeadId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LeadOrContactId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LeadOrContactOwnerId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LeadSource:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            MobilePhone:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Name:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Phone:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            PostalCode:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Salutation:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            State:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Status:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Street:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            SystemModstamp:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Title:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Type:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+        Contact:
+          description: No description available
+          fields:
+            AccountId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            AssistantName:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            AssistantPhone:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Birthdate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            ContactSource:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CreatedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CreatedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Department:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Description:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Email:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            EmailBouncedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            EmailBouncedReason:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Fax:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            FirstName:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            GenderIdentity:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            HomePhone:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Id:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            IndividualId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            IsDeleted:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsEmailBounced:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsPersonAccount:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            Jigsaw:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            JigsawContactId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LastActivityDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastCURequestDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastCUUpdateDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastModifiedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LastModifiedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastName:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LastReferencedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastViewedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LeadSource:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            MailingCity:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            MailingCountry:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            MailingGeocodeAccuracy:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            MailingLatitude:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            MailingLongitude:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            MailingPostalCode:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            MailingState:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            MailingStreet:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            MasterRecordId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            MobilePhone:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Name:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            OtherCity:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            OtherCountry:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            OtherGeocodeAccuracy:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            OtherLatitude:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            OtherLongitude:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            OtherPhone:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            OtherPostalCode:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            OtherState:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            OtherStreet:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            OwnerId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Phone:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            PhotoUrl:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Pronouns:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ReportsToId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Salutation:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            SystemModstamp:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Title:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+        Contract:
+          description: No description available
+          fields:
+            AccountId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ActivatedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ActivatedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            BillingCity:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            BillingCountry:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            BillingGeocodeAccuracy:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            BillingLatitude:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            BillingLongitude:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            BillingPostalCode:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            BillingState:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            BillingStreet:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CompanySignedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            CompanySignedId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ContractNumber:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ContractTerm:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Int
+            CreatedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CreatedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            CustomerSignedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            CustomerSignedId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CustomerSignedTitle:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Description:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            EndDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Id:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            IsDeleted:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            LastActivityDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastApprovedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastModifiedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LastModifiedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastReferencedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastViewedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            OwnerExpirationNotice:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            OwnerId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ShippingCity:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ShippingCountry:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ShippingGeocodeAccuracy:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ShippingLatitude:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            ShippingLongitude:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            ShippingPostalCode:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ShippingState:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ShippingStreet:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            SpecialTerms:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            StartDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Status:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            StatusCode:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            SystemModstamp:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
         DDNConfigResponseV1:
           fields:
             config:
@@ -324,45 +1893,1900 @@ definition:
               type:
                 type: named
                 name: String
-        brands:
+        Event:
           description: No description available
           fields:
-            brand_url:
+            AccountId:
               description: No description available
               type:
                 type: nullable
                 underlying_type:
                   type: named
                   name: String
-            created_at:
+            ActivityDate:
               description: No description available
               type:
                 type: nullable
                 underlying_type:
                   type: named
                   name: Timestamp
-            id:
+            ActivityDateTime:
               description: No description available
               type:
                 type: nullable
                 underlying_type:
                   type: named
-                  name: BigInt
-            name:
+                  name: Timestamp
+            CreatedById:
               description: No description available
               type:
                 type: nullable
                 underlying_type:
                   type: named
                   name: String
-            updated_at:
+            CreatedDate:
               description: No description available
               type:
                 type: nullable
                 underlying_type:
                   type: named
                   name: Timestamp
-            url:
+            Description:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            DurationInMinutes:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Int
+            EndDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            EndDateTime:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            EventSubtype:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            GroupEventType:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Id:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            IsAllDayEvent:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsArchived:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsChild:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsDeleted:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsGroupEvent:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsPrivate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsRecurrence:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsRecurrence2:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsRecurrence2Exception:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsRecurrence2Exclusion:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsReminderSet:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            LastModifiedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LastModifiedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Location:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            OwnerId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Recurrence2PatternStartDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Recurrence2PatternText:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Recurrence2PatternTimeZone:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Recurrence2PatternVersion:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            RecurrenceActivityId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            RecurrenceDayOfMonth:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Int
+            RecurrenceDayOfWeekMask:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Int
+            RecurrenceEndDateOnly:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            RecurrenceInstance:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            RecurrenceInterval:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Int
+            RecurrenceMonthOfYear:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            RecurrenceStartDateTime:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            RecurrenceTimeZoneSidKey:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            RecurrenceType:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ReminderDateTime:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            ShowAs:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            StartDateTime:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Subject:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            SystemModstamp:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            WhatId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            WhoId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+        Lead:
+          description: No description available
+          fields:
+            AnnualRevenue:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            City:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Company:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ConvertedAccountId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ConvertedContactId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ConvertedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            ConvertedOpportunityId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Country:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CreatedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CreatedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Email:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            FirstName:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Id:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Industry:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            IsConverted:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsDeleted:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            LastModifiedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LastModifiedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastName:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LeadSource:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Name:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            NumberOfEmployees:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Int
+            Phone:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            PostalCode:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Rating:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Salutation:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            State:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Status:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Street:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            SystemModstamp:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Title:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Website:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+        Opportunity:
+          description: No description available
+          fields:
+            AccountId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Amount:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            CloseDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            ContactId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CreatedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CreatedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Description:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Fiscal:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            FiscalQuarter:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Int
+            FiscalYear:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Int
+            ForecastCategory:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ForecastCategoryName:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            HasOpenActivity:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            HasOpportunityLineItem:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            HasOverdueTask:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            Id:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            IsClosed:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsDeleted:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsWon:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            LastActivityDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastAmountChangedHistoryId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LastCloseDateChangedHistoryId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LastModifiedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LastModifiedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastReferencedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastStageChangeDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastViewedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LeadSource:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Name:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            NextStep:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            OwnerId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Pricebook2Id:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Probability:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            PushCount:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Int
+            StageName:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            SystemModstamp:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Type:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+        OpportunityContactRole:
+          description: No description available
+          fields:
+            ContactId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CreatedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CreatedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Id:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            IsDeleted:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsPrimary:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            LastModifiedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LastModifiedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            OpportunityId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Role:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            SystemModstamp:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+        OpportunityLineItem:
+          description: No description available
+          fields:
+            CreatedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CreatedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Description:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Id:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            IsDeleted:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            LastModifiedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LastModifiedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            ListPrice:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            Name:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            OpportunityId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            PricebookEntryId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Product2Id:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ProductCode:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Quantity:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            ServiceDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            SortOrder:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Int
+            SystemModstamp:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            TotalPrice:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            UnitPrice:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+        Product2:
+          description: No description available
+          fields:
+            CreatedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CreatedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Description:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            DisplayUrl:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ExternalDataSourceId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ExternalId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Family:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Id:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            IsActive:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsArchived:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsDeleted:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            LastModifiedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LastModifiedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastReferencedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastViewedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Name:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ProductCode:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            QuantityUnitOfMeasure:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            StockKeepingUnit:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            SystemModstamp:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+        Task:
+          description: No description available
+          fields:
+            AccountId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ActivityDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            CallDurationInSeconds:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Int
+            CallObject:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CallType:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CompletedDateTime:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            CreatedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CreatedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Description:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Id:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            IsArchived:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsClosed:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsDeleted:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsHighPriority:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsRecurrence:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsReminderSet:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            LastModifiedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LastModifiedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            OwnerId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Priority:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            RecurrenceActivityId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            RecurrenceDayOfMonth:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Int
+            RecurrenceDayOfWeekMask:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Int
+            RecurrenceEndDateOnly:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            RecurrenceInstance:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            RecurrenceInterval:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Int
+            RecurrenceMonthOfYear:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            RecurrenceRegeneratedType:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            RecurrenceStartDateOnly:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            RecurrenceTimeZoneSidKey:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            RecurrenceType:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ReminderDateTime:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Status:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Subject:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            SystemModstamp:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            TaskSubtype:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Type:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            WhatId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            WhoId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+        User:
+          description: No description available
+          fields:
+            AboutMe:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            AccountId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Alias:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            BadgeText:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            BannerPhotoUrl:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CallCenterId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            City:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CommunityNickname:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CompanyName:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ContactId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Country:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CreatedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            CreatedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            DefaultGroupNotificationFrequency:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            DelegatedApproverId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Department:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            DigestFrequency:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Division:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Email:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            EmailEncodingKey:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            EmployeeNumber:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Extension:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Fax:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            FirstName:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ForecastEnabled:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            FullPhotoUrl:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            GeocodeAccuracy:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Id:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            IsActive:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsExtIndicatorVisible:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            IsProfilePhotoActive:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            LanguageLocaleKey:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LastLoginDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastModifiedById:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LastModifiedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastName:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            LastReferencedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            LastViewedDate:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            Latitude:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            LocaleSidKey:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Longitude:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Float
+            ManagerId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            MediumBannerPhotoUrl:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            MediumPhotoUrl:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            MobilePhone:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Name:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Phone:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            PostalCode:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ProfileId:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            ReceivesAdminInfoEmails:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            ReceivesInfoEmails:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            SmallBannerPhotoUrl:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            SmallPhotoUrl:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            State:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Street:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            SystemModstamp:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Timestamp
+            TimeZoneSidKey:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Title:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            UserPermissionsMarketingUser:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            UserPermissionsOfflineUser:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: Boolean
+            UserType:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: String
+            Username:
               description: No description available
               type:
                 type: nullable
@@ -386,51 +3810,6 @@ definition:
                 underlying_type:
                   type: named
                   name: String
-        groups:
-          description: No description available
-          fields:
-            created_at:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: Timestamp
-            description:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
-            id:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: BigInt
-            name:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
-            updated_at:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: Timestamp
-            url:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
         incremental_sync_cursors:
           description: No description available
           fields:
@@ -448,304 +3827,135 @@ definition:
                 underlying_type:
                   type: named
                   name: String
-        organizations:
-          description: No description available
-          fields:
-            created_at:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: Timestamp
-            details:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
-            domain_names:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
-            group_id:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: BigInt
-            id:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: BigInt
-            name:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
-            notes:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
-            tags:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
-            updated_at:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: Timestamp
-            url:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
-        tickets:
-          description: No description available
-          fields:
-            assignee_id:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: BigInt
-            brand_id:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: BigInt
-            created_at:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: Timestamp
-            description:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
-            group_id:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: BigInt
-            id:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: BigInt
-            organization_id:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: BigInt
-            priority:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
-            requester_id:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: BigInt
-            status:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
-            subject:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
-            submitter_id:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: BigInt
-            tags:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
-            type:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
-            updated_at:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: Timestamp
-            url:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
-            via_channel:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
-        users:
-          description: No description available
-          fields:
-            active:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: Boolean
-            created_at:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: Timestamp
-            details:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
-            email:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
-            id:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: BigInt
-            name:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
-            notes:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
-            organization_id:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: BigInt
-            phone:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
-            tags:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
-            time_zone:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
-            updated_at:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: Timestamp
-            url:
-              description: No description available
-              type:
-                type: nullable
-                underlying_type:
-                  type: named
-                  name: String
       collections:
-        - name: brands
+        - name: Account
           description: No description available
           arguments:
             headers:
               type:
                 type: named
                 name: JSON
-          type: brands
+          type: Account
+          uniqueness_constraints: {}
+          foreign_keys: {}
+        - name: Campaign
+          description: No description available
+          arguments:
+            headers:
+              type:
+                type: named
+                name: JSON
+          type: Campaign
+          uniqueness_constraints: {}
+          foreign_keys: {}
+        - name: CampaignMember
+          description: No description available
+          arguments:
+            headers:
+              type:
+                type: named
+                name: JSON
+          type: CampaignMember
+          uniqueness_constraints: {}
+          foreign_keys: {}
+        - name: Contact
+          description: No description available
+          arguments:
+            headers:
+              type:
+                type: named
+                name: JSON
+          type: Contact
+          uniqueness_constraints: {}
+          foreign_keys: {}
+        - name: Contract
+          description: No description available
+          arguments:
+            headers:
+              type:
+                type: named
+                name: JSON
+          type: Contract
+          uniqueness_constraints: {}
+          foreign_keys: {}
+        - name: Event
+          description: No description available
+          arguments:
+            headers:
+              type:
+                type: named
+                name: JSON
+          type: Event
+          uniqueness_constraints: {}
+          foreign_keys: {}
+        - name: Lead
+          description: No description available
+          arguments:
+            headers:
+              type:
+                type: named
+                name: JSON
+          type: Lead
+          uniqueness_constraints: {}
+          foreign_keys: {}
+        - name: Opportunity
+          description: No description available
+          arguments:
+            headers:
+              type:
+                type: named
+                name: JSON
+          type: Opportunity
+          uniqueness_constraints: {}
+          foreign_keys: {}
+        - name: OpportunityContactRole
+          description: No description available
+          arguments:
+            headers:
+              type:
+                type: named
+                name: JSON
+          type: OpportunityContactRole
+          uniqueness_constraints: {}
+          foreign_keys: {}
+        - name: OpportunityLineItem
+          description: No description available
+          arguments:
+            headers:
+              type:
+                type: named
+                name: JSON
+          type: OpportunityLineItem
+          uniqueness_constraints: {}
+          foreign_keys: {}
+        - name: Product2
+          description: No description available
+          arguments:
+            headers:
+              type:
+                type: named
+                name: JSON
+          type: Product2
+          uniqueness_constraints: {}
+          foreign_keys: {}
+        - name: Task
+          description: No description available
+          arguments:
+            headers:
+              type:
+                type: named
+                name: JSON
+          type: Task
+          uniqueness_constraints: {}
+          foreign_keys: {}
+        - name: User
+          description: No description available
+          arguments:
+            headers:
+              type:
+                type: named
+                name: JSON
+          type: User
           uniqueness_constraints: {}
           foreign_keys: {}
         - name: ddn_tenant_state
@@ -758,16 +3968,6 @@ definition:
           type: ddn_tenant_state
           uniqueness_constraints: {}
           foreign_keys: {}
-        - name: groups
-          description: No description available
-          arguments:
-            headers:
-              type:
-                type: named
-                name: JSON
-          type: groups
-          uniqueness_constraints: {}
-          foreign_keys: {}
         - name: incremental_sync_cursors
           description: No description available
           arguments:
@@ -778,36 +3978,6 @@ definition:
           type: incremental_sync_cursors
           uniqueness_constraints: {}
           foreign_keys: {}
-        - name: organizations
-          description: No description available
-          arguments:
-            headers:
-              type:
-                type: named
-                name: JSON
-          type: organizations
-          uniqueness_constraints: {}
-          foreign_keys: {}
-        - name: tickets
-          description: No description available
-          arguments:
-            headers:
-              type:
-                type: named
-                name: JSON
-          type: tickets
-          uniqueness_constraints: {}
-          foreign_keys: {}
-        - name: users
-          description: No description available
-          arguments:
-            headers:
-              type:
-                type: named
-                name: JSON
-          type: users
-          uniqueness_constraints: {}
-          foreign_keys: {}
       functions:
         - name: _ddnConfig
           description: $ddn.config
@@ -815,8 +3985,8 @@ definition:
           result_type:
             type: named
             name: DDNConfigResponseV1
-        - name: _ddnZendeskStatus
-          description: $ddn.functions.zendeskStatus
+        - name: _ddnSalesforceStatus
+          description: $ddn.functions.salesforceStatus
           arguments:
             headers:
               type:
@@ -826,8 +3996,8 @@ definition:
             type: named
             name: DDNJobStatusV1
       procedures:
-        - name: _ddnZendeskLogin
-          description: $ddn.functions.zendeskLogin
+        - name: _ddnSalesforceLogin
+          description: $ddn.functions.salesforceLogin
           arguments:
             headers:
               type:

@@ -1,8 +1,9 @@
 import { JSONValue } from "@hasura/ndc-lambda-sdk";
 import {
-  exchangeZendeskOAuthCodeForToken,
+  AUTHORIZATION_ENDPOINT,
+  exchangeSalesforceOAuthCode,
   getTenantIdFromHeaders,
-  ZENDESK_CLIENT_ID,
+  SALESFORCE_CLIENT_ID,
 } from "./lib/lib";
 import { TenantManager } from "./lib/TenantManager";
 import {
@@ -47,24 +48,25 @@ export async function _ddnConfig(): Promise<DDNConfigResponseV1> {
     version: 1,
     jobs: [
       {
-        id: "my-zendesk-job",
-        title: "Zendesk",
+        id: "my-salesforce-job",
+        title: "Salesforce",
         functions: {
           status: {
-            functionTag: "zendeskStatus",
+            functionTag: "salesforceStatus",
           },
         },
         oauthProviders: [
           {
-            id: "my-zendesk-provider",
-            template: "zendesk",
+            id: "my-salesforce-provider",
+            template: "salesforce",
             oauthCodeLogin: {
-              functionTag: "zendeskLogin",
+              functionTag: "salesforceLogin",
             },
             oauthDetails: {
-              clientId: ZENDESK_CLIENT_ID,
-              scopes: "read",
-              pkceRequired: process.env.ZENDESK_PKCE_REQUIRED === "true",
+              clientId: SALESFORCE_CLIENT_ID,
+              authorizationEndpoint: AUTHORIZATION_ENDPOINT,
+              scopes: "api refresh_token",
+              pkceRequired: process.env.SALESFORCE_PKCE_REQUIRED === "true",
             },
           },
         ],
@@ -79,10 +81,10 @@ export async function _ddnConfig(): Promise<DDNConfigResponseV1> {
 }
 
 /**
- *  $ddn.functions.zendeskStatus
+ *  $ddn.functions.salesforceStatus
  *  @readonly
  * */
-export async function _ddnZendeskStatus(
+export async function _ddnSalesforceStatus(
   headers: JSONValue
 ): Promise<DDNJobStatusV1> {
   const tenantId = getTenantIdFromHeaders(headers);
@@ -95,9 +97,9 @@ export async function _ddnZendeskStatus(
 }
 
 /**
- * $ddn.functions.zendeskLogin
+ * $ddn.functions.salesforceLogin
  */
-export async function _ddnZendeskLogin(
+export async function _ddnSalesforceLogin(
   req: DDNOAuthProviderCodeLoginRequestV1,
   userConfig: string,
   headers: JSONValue
@@ -106,10 +108,9 @@ export async function _ddnZendeskLogin(
   const tenant = getTenant(tenantId);
 
   try {
-    const token = await exchangeZendeskOAuthCodeForToken(req);
-    const config = JSON.parse(userConfig);
+    const tokenData = await exchangeSalesforceOAuthCode(req);
 
-    await tenant.setUserConfig(token, config);
+    await tenant.setUserConfig(tokenData);
 
     tenant.run();
 

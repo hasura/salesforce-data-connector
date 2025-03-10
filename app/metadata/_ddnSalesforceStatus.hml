@@ -31,22 +31,22 @@ definition:
 kind: Command
 version: v1
 definition:
-  name: _ddnZendeskStatus
+  name: _ddnSalesforceStatus
   outputType: DDNJobStatusV1!
   source:
     dataConnectorName: myduckduckapi
     dataConnectorCommand:
-      function: _ddnZendeskStatus
+      function: _ddnSalesforceStatus
   graphql:
-    rootFieldName: _ddnZendeskStatus
+    rootFieldName: _ddnSalesforceStatus
     rootFieldKind: Query
-  description: $ddn.functions.zendeskStatus
+  description: $ddn.functions.salesforceStatus
 
 ---
 kind: CommandPermissions
 version: v1
 definition:
-  commandName: _ddnZendeskStatus
+  commandName: _ddnSalesforceStatus
   permissions:
     - role: admin
       allowExecution: true

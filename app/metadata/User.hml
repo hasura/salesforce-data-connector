@@ -1,0 +1,724 @@
+---
+kind: ObjectType
+version: v1
+definition:
+  name: User
+  description: No description available
+  fields:
+    - name: AboutMe
+      type: String
+      description: No description available
+    - name: AccountId
+      type: String
+      description: No description available
+    - name: Alias
+      type: String
+      description: No description available
+    - name: BadgeText
+      type: String
+      description: No description available
+    - name: BannerPhotoUrl
+      type: String
+      description: No description available
+    - name: CallCenterId
+      type: String
+      description: No description available
+    - name: City
+      type: String
+      description: No description available
+    - name: CommunityNickname
+      type: String
+      description: No description available
+    - name: CompanyName
+      type: String
+      description: No description available
+    - name: ContactId
+      type: String
+      description: No description available
+    - name: Country
+      type: String
+      description: No description available
+    - name: CreatedById
+      type: String
+      description: No description available
+    - name: CreatedDate
+      type: Timestamp
+      description: No description available
+    - name: DefaultGroupNotificationFrequency
+      type: String
+      description: No description available
+    - name: DelegatedApproverId
+      type: String
+      description: No description available
+    - name: Department
+      type: String
+      description: No description available
+    - name: DigestFrequency
+      type: String
+      description: No description available
+    - name: Division
+      type: String
+      description: No description available
+    - name: Email
+      type: String
+      description: No description available
+    - name: EmailEncodingKey
+      type: String
+      description: No description available
+    - name: EmployeeNumber
+      type: String
+      description: No description available
+    - name: Extension
+      type: String
+      description: No description available
+    - name: Fax
+      type: String
+      description: No description available
+    - name: FirstName
+      type: String
+      description: No description available
+    - name: ForecastEnabled
+      type: Boolean
+      description: No description available
+    - name: FullPhotoUrl
+      type: String
+      description: No description available
+    - name: GeocodeAccuracy
+      type: String
+      description: No description available
+    - name: Id
+      type: String
+      description: No description available
+    - name: IsActive
+      type: Boolean
+      description: No description available
+    - name: IsExtIndicatorVisible
+      type: Boolean
+      description: No description available
+    - name: IsProfilePhotoActive
+      type: Boolean
+      description: No description available
+    - name: LanguageLocaleKey
+      type: String
+      description: No description available
+    - name: LastLoginDate
+      type: Timestamp
+      description: No description available
+    - name: LastModifiedById
+      type: String
+      description: No description available
+    - name: LastModifiedDate
+      type: Timestamp
+      description: No description available
+    - name: LastName
+      type: String
+      description: No description available
+    - name: LastReferencedDate
+      type: Timestamp
+      description: No description available
+    - name: LastViewedDate
+      type: Timestamp
+      description: No description available
+    - name: Latitude
+      type: Float
+      description: No description available
+    - name: LocaleSidKey
+      type: String
+      description: No description available
+    - name: Longitude
+      type: Float
+      description: No description available
+    - name: ManagerId
+      type: String
+      description: No description available
+    - name: MediumBannerPhotoUrl
+      type: String
+      description: No description available
+    - name: MediumPhotoUrl
+      type: String
+      description: No description available
+    - name: MobilePhone
+      type: String
+      description: No description available
+    - name: Name
+      type: String
+      description: No description available
+    - name: Phone
+      type: String
+      description: No description available
+    - name: PostalCode
+      type: String
+      description: No description available
+    - name: ProfileId
+      type: String
+      description: No description available
+    - name: ReceivesAdminInfoEmails
+      type: Boolean
+      description: No description available
+    - name: ReceivesInfoEmails
+      type: Boolean
+      description: No description available
+    - name: SmallBannerPhotoUrl
+      type: String
+      description: No description available
+    - name: SmallPhotoUrl
+      type: String
+      description: No description available
+    - name: State
+      type: String
+      description: No description available
+    - name: Street
+      type: String
+      description: No description available
+    - name: SystemModstamp
+      type: Timestamp
+      description: No description available
+    - name: TimeZoneSidKey
+      type: String
+      description: No description available
+    - name: Title
+      type: String
+      description: No description available
+    - name: UserPermissionsMarketingUser
+      type: Boolean
+      description: No description available
+    - name: UserPermissionsOfflineUser
+      type: Boolean
+      description: No description available
+    - name: UserType
+      type: String
+      description: No description available
+    - name: Username
+      type: String
+      description: No description available
+  graphql:
+    typeName: User
+    inputTypeName: User_input
+  dataConnectorTypeMapping:
+    - dataConnectorName: myduckduckapi
+      dataConnectorObjectType: User
+
+---
+kind: TypePermissions
+version: v1
+definition:
+  typeName: User
+  permissions:
+    - role: admin
+      output:
+        allowedFields:
+          - AboutMe
+          - AccountId
+          - Alias
+          - BadgeText
+          - BannerPhotoUrl
+          - CallCenterId
+          - City
+          - CommunityNickname
+          - CompanyName
+          - ContactId
+          - Country
+          - CreatedById
+          - CreatedDate
+          - DefaultGroupNotificationFrequency
+          - DelegatedApproverId
+          - Department
+          - DigestFrequency
+          - Division
+          - Email
+          - EmailEncodingKey
+          - EmployeeNumber
+          - Extension
+          - Fax
+          - FirstName
+          - ForecastEnabled
+          - FullPhotoUrl
+          - GeocodeAccuracy
+          - Id
+          - IsActive
+          - IsExtIndicatorVisible
+          - IsProfilePhotoActive
+          - LanguageLocaleKey
+          - LastLoginDate
+          - LastModifiedById
+          - LastModifiedDate
+          - LastName
+          - LastReferencedDate
+          - LastViewedDate
+          - Latitude
+          - LocaleSidKey
+          - Longitude
+          - ManagerId
+          - MediumBannerPhotoUrl
+          - MediumPhotoUrl
+          - MobilePhone
+          - Name
+          - Phone
+          - PostalCode
+          - ProfileId
+          - ReceivesAdminInfoEmails
+          - ReceivesInfoEmails
+          - SmallBannerPhotoUrl
+          - SmallPhotoUrl
+          - State
+          - Street
+          - SystemModstamp
+          - TimeZoneSidKey
+          - Title
+          - UserPermissionsMarketingUser
+          - UserPermissionsOfflineUser
+          - UserType
+          - Username
+
+---
+kind: BooleanExpressionType
+version: v1
+definition:
+  name: User_bool_exp
+  operand:
+    object:
+      type: User
+      comparableFields:
+        - fieldName: AboutMe
+          booleanExpressionType: String_bool_exp
+        - fieldName: AccountId
+          booleanExpressionType: String_bool_exp
+        - fieldName: Alias
+          booleanExpressionType: String_bool_exp
+        - fieldName: BadgeText
+          booleanExpressionType: String_bool_exp
+        - fieldName: BannerPhotoUrl
+          booleanExpressionType: String_bool_exp
+        - fieldName: CallCenterId
+          booleanExpressionType: String_bool_exp
+        - fieldName: City
+          booleanExpressionType: String_bool_exp
+        - fieldName: CommunityNickname
+          booleanExpressionType: String_bool_exp
+        - fieldName: CompanyName
+          booleanExpressionType: String_bool_exp
+        - fieldName: ContactId
+          booleanExpressionType: String_bool_exp
+        - fieldName: Country
+          booleanExpressionType: String_bool_exp
+        - fieldName: CreatedById
+          booleanExpressionType: String_bool_exp
+        - fieldName: CreatedDate
+          booleanExpressionType: Timestamp_bool_exp
+        - fieldName: DefaultGroupNotificationFrequency
+          booleanExpressionType: String_bool_exp
+        - fieldName: DelegatedApproverId
+          booleanExpressionType: String_bool_exp
+        - fieldName: Department
+          booleanExpressionType: String_bool_exp
+        - fieldName: DigestFrequency
+          booleanExpressionType: String_bool_exp
+        - fieldName: Division
+          booleanExpressionType: String_bool_exp
+        - fieldName: Email
+          booleanExpressionType: String_bool_exp
+        - fieldName: EmailEncodingKey
+          booleanExpressionType: String_bool_exp
+        - fieldName: EmployeeNumber
+          booleanExpressionType: String_bool_exp
+        - fieldName: Extension
+          booleanExpressionType: String_bool_exp
+        - fieldName: Fax
+          booleanExpressionType: String_bool_exp
+        - fieldName: FirstName
+          booleanExpressionType: String_bool_exp
+        - fieldName: ForecastEnabled
+          booleanExpressionType: Boolean_bool_exp
+        - fieldName: FullPhotoUrl
+          booleanExpressionType: String_bool_exp
+        - fieldName: GeocodeAccuracy
+          booleanExpressionType: String_bool_exp
+        - fieldName: Id
+          booleanExpressionType: String_bool_exp
+        - fieldName: IsActive
+          booleanExpressionType: Boolean_bool_exp
+        - fieldName: IsExtIndicatorVisible
+          booleanExpressionType: Boolean_bool_exp
+        - fieldName: IsProfilePhotoActive
+          booleanExpressionType: Boolean_bool_exp
+        - fieldName: LanguageLocaleKey
+          booleanExpressionType: String_bool_exp
+        - fieldName: LastLoginDate
+          booleanExpressionType: Timestamp_bool_exp
+        - fieldName: LastModifiedById
+          booleanExpressionType: String_bool_exp
+        - fieldName: LastModifiedDate
+          booleanExpressionType: Timestamp_bool_exp
+        - fieldName: LastName
+          booleanExpressionType: String_bool_exp
+        - fieldName: LastReferencedDate
+          booleanExpressionType: Timestamp_bool_exp
+        - fieldName: LastViewedDate
+          booleanExpressionType: Timestamp_bool_exp
+        - fieldName: Latitude
+          booleanExpressionType: Float_bool_exp
+        - fieldName: LocaleSidKey
+          booleanExpressionType: String_bool_exp
+        - fieldName: Longitude
+          booleanExpressionType: Float_bool_exp
+        - fieldName: ManagerId
+          booleanExpressionType: String_bool_exp
+        - fieldName: MediumBannerPhotoUrl
+          booleanExpressionType: String_bool_exp
+        - fieldName: MediumPhotoUrl
+          booleanExpressionType: String_bool_exp
+        - fieldName: MobilePhone
+          booleanExpressionType: String_bool_exp
+        - fieldName: Name
+          booleanExpressionType: String_bool_exp
+        - fieldName: Phone
+          booleanExpressionType: String_bool_exp
+        - fieldName: PostalCode
+          booleanExpressionType: String_bool_exp
+        - fieldName: ProfileId
+          booleanExpressionType: String_bool_exp
+        - fieldName: ReceivesAdminInfoEmails
+          booleanExpressionType: Boolean_bool_exp
+        - fieldName: ReceivesInfoEmails
+          booleanExpressionType: Boolean_bool_exp
+        - fieldName: SmallBannerPhotoUrl
+          booleanExpressionType: String_bool_exp
+        - fieldName: SmallPhotoUrl
+          booleanExpressionType: String_bool_exp
+        - fieldName: State
+          booleanExpressionType: String_bool_exp
+        - fieldName: Street
+          booleanExpressionType: String_bool_exp
+        - fieldName: SystemModstamp
+          booleanExpressionType: Timestamp_bool_exp
+        - fieldName: TimeZoneSidKey
+          booleanExpressionType: String_bool_exp
+        - fieldName: Title
+          booleanExpressionType: String_bool_exp
+        - fieldName: UserPermissionsMarketingUser
+          booleanExpressionType: Boolean_bool_exp
+        - fieldName: UserPermissionsOfflineUser
+          booleanExpressionType: Boolean_bool_exp
+        - fieldName: UserType
+          booleanExpressionType: String_bool_exp
+        - fieldName: Username
+          booleanExpressionType: String_bool_exp
+      comparableRelationships: []
+  logicalOperators:
+    enable: true
+  isNull:
+    enable: true
+  graphql:
+    typeName: User_bool_exp
+
+---
+kind: AggregateExpression
+version: v1
+definition:
+  name: User_agg_exp
+  operand:
+    object:
+      aggregatedType: User
+      aggregatableFields:
+        - fieldName: AboutMe
+          aggregateExpression: String_agg_exp
+        - fieldName: AccountId
+          aggregateExpression: String_agg_exp
+        - fieldName: Alias
+          aggregateExpression: String_agg_exp
+        - fieldName: BadgeText
+          aggregateExpression: String_agg_exp
+        - fieldName: BannerPhotoUrl
+          aggregateExpression: String_agg_exp
+        - fieldName: CallCenterId
+          aggregateExpression: String_agg_exp
+        - fieldName: City
+          aggregateExpression: String_agg_exp
+        - fieldName: CommunityNickname
+          aggregateExpression: String_agg_exp
+        - fieldName: CompanyName
+          aggregateExpression: String_agg_exp
+        - fieldName: ContactId
+          aggregateExpression: String_agg_exp
+        - fieldName: Country
+          aggregateExpression: String_agg_exp
+        - fieldName: CreatedById
+          aggregateExpression: String_agg_exp
+        - fieldName: CreatedDate
+          aggregateExpression: Timestamp_agg_exp
+        - fieldName: DefaultGroupNotificationFrequency
+          aggregateExpression: String_agg_exp
+        - fieldName: DelegatedApproverId
+          aggregateExpression: String_agg_exp
+        - fieldName: Department
+          aggregateExpression: String_agg_exp
+        - fieldName: DigestFrequency
+          aggregateExpression: String_agg_exp
+        - fieldName: Division
+          aggregateExpression: String_agg_exp
+        - fieldName: Email
+          aggregateExpression: String_agg_exp
+        - fieldName: EmailEncodingKey
+          aggregateExpression: String_agg_exp
+        - fieldName: EmployeeNumber
+          aggregateExpression: String_agg_exp
+        - fieldName: Extension
+          aggregateExpression: String_agg_exp
+        - fieldName: Fax
+          aggregateExpression: String_agg_exp
+        - fieldName: FirstName
+          aggregateExpression: String_agg_exp
+        - fieldName: ForecastEnabled
+          aggregateExpression: Boolean_agg_exp
+        - fieldName: FullPhotoUrl
+          aggregateExpression: String_agg_exp
+        - fieldName: GeocodeAccuracy
+          aggregateExpression: String_agg_exp
+        - fieldName: Id
+          aggregateExpression: String_agg_exp
+        - fieldName: IsActive
+          aggregateExpression: Boolean_agg_exp
+        - fieldName: IsExtIndicatorVisible
+          aggregateExpression: Boolean_agg_exp
+        - fieldName: IsProfilePhotoActive
+          aggregateExpression: Boolean_agg_exp
+        - fieldName: LanguageLocaleKey
+          aggregateExpression: String_agg_exp
+        - fieldName: LastLoginDate
+          aggregateExpression: Timestamp_agg_exp
+        - fieldName: LastModifiedById
+          aggregateExpression: String_agg_exp
+        - fieldName: LastModifiedDate
+          aggregateExpression: Timestamp_agg_exp
+        - fieldName: LastName
+          aggregateExpression: String_agg_exp
+        - fieldName: LastReferencedDate
+          aggregateExpression: Timestamp_agg_exp
+        - fieldName: LastViewedDate
+          aggregateExpression: Timestamp_agg_exp
+        - fieldName: Latitude
+          aggregateExpression: Float_agg_exp
+        - fieldName: LocaleSidKey
+          aggregateExpression: String_agg_exp
+        - fieldName: Longitude
+          aggregateExpression: Float_agg_exp
+        - fieldName: ManagerId
+          aggregateExpression: String_agg_exp
+        - fieldName: MediumBannerPhotoUrl
+          aggregateExpression: String_agg_exp
+        - fieldName: MediumPhotoUrl
+          aggregateExpression: String_agg_exp
+        - fieldName: MobilePhone
+          aggregateExpression: String_agg_exp
+        - fieldName: Name
+          aggregateExpression: String_agg_exp
+        - fieldName: Phone
+          aggregateExpression: String_agg_exp
+        - fieldName: PostalCode
+          aggregateExpression: String_agg_exp
+        - fieldName: ProfileId
+          aggregateExpression: String_agg_exp
+        - fieldName: ReceivesAdminInfoEmails
+          aggregateExpression: Boolean_agg_exp
+        - fieldName: ReceivesInfoEmails
+          aggregateExpression: Boolean_agg_exp
+        - fieldName: SmallBannerPhotoUrl
+          aggregateExpression: String_agg_exp
+        - fieldName: SmallPhotoUrl
+          aggregateExpression: String_agg_exp
+        - fieldName: State
+          aggregateExpression: String_agg_exp
+        - fieldName: Street
+          aggregateExpression: String_agg_exp
+        - fieldName: SystemModstamp
+          aggregateExpression: Timestamp_agg_exp
+        - fieldName: TimeZoneSidKey
+          aggregateExpression: String_agg_exp
+        - fieldName: Title
+          aggregateExpression: String_agg_exp
+        - fieldName: UserPermissionsMarketingUser
+          aggregateExpression: Boolean_agg_exp
+        - fieldName: UserPermissionsOfflineUser
+          aggregateExpression: Boolean_agg_exp
+        - fieldName: UserType
+          aggregateExpression: String_agg_exp
+        - fieldName: Username
+          aggregateExpression: String_agg_exp
+  count:
+    enable: true
+  graphql:
+    selectTypeName: User_agg_exp
+
+---
+kind: OrderByExpression
+version: v1
+definition:
+  name: User_order_by_exp
+  operand:
+    object:
+      orderedType: User
+      orderableFields:
+        - fieldName: AboutMe
+          orderByExpression: String_order_by_exp
+        - fieldName: AccountId
+          orderByExpression: String_order_by_exp
+        - fieldName: Alias
+          orderByExpression: String_order_by_exp
+        - fieldName: BadgeText
+          orderByExpression: String_order_by_exp
+        - fieldName: BannerPhotoUrl
+          orderByExpression: String_order_by_exp
+        - fieldName: CallCenterId
+          orderByExpression: String_order_by_exp
+        - fieldName: City
+          orderByExpression: String_order_by_exp
+        - fieldName: CommunityNickname
+          orderByExpression: String_order_by_exp
+        - fieldName: CompanyName
+          orderByExpression: String_order_by_exp
+        - fieldName: ContactId
+          orderByExpression: String_order_by_exp
+        - fieldName: Country
+          orderByExpression: String_order_by_exp
+        - fieldName: CreatedById
+          orderByExpression: String_order_by_exp
+        - fieldName: CreatedDate
+          orderByExpression: Timestamp_order_by_exp
+        - fieldName: DefaultGroupNotificationFrequency
+          orderByExpression: String_order_by_exp
+        - fieldName: DelegatedApproverId
+          orderByExpression: String_order_by_exp
+        - fieldName: Department
+          orderByExpression: String_order_by_exp
+        - fieldName: DigestFrequency
+          orderByExpression: String_order_by_exp
+        - fieldName: Division
+          orderByExpression: String_order_by_exp
+        - fieldName: Email
+          orderByExpression: String_order_by_exp
+        - fieldName: EmailEncodingKey
+          orderByExpression: String_order_by_exp
+        - fieldName: EmployeeNumber
+          orderByExpression: String_order_by_exp
+        - fieldName: Extension
+          orderByExpression: String_order_by_exp
+        - fieldName: Fax
+          orderByExpression: String_order_by_exp
+        - fieldName: FirstName
+          orderByExpression: String_order_by_exp
+        - fieldName: ForecastEnabled
+          orderByExpression: Boolean_order_by_exp
+        - fieldName: FullPhotoUrl
+          orderByExpression: String_order_by_exp
+        - fieldName: GeocodeAccuracy
+          orderByExpression: String_order_by_exp
+        - fieldName: Id
+          orderByExpression: String_order_by_exp
+        - fieldName: IsActive
+          orderByExpression: Boolean_order_by_exp
+        - fieldName: IsExtIndicatorVisible
+          orderByExpression: Boolean_order_by_exp
+        - fieldName: IsProfilePhotoActive
+          orderByExpression: Boolean_order_by_exp
+        - fieldName: LanguageLocaleKey
+          orderByExpression: String_order_by_exp
+        - fieldName: LastLoginDate
+          orderByExpression: Timestamp_order_by_exp
+        - fieldName: LastModifiedById
+          orderByExpression: String_order_by_exp
+        - fieldName: LastModifiedDate
+          orderByExpression: Timestamp_order_by_exp
+        - fieldName: LastName
+          orderByExpression: String_order_by_exp
+        - fieldName: LastReferencedDate
+          orderByExpression: Timestamp_order_by_exp
+        - fieldName: LastViewedDate
+          orderByExpression: Timestamp_order_by_exp
+        - fieldName: Latitude
+          orderByExpression: Float_order_by_exp
+        - fieldName: LocaleSidKey
+          orderByExpression: String_order_by_exp
+        - fieldName: Longitude
+          orderByExpression: Float_order_by_exp
+        - fieldName: ManagerId
+          orderByExpression: String_order_by_exp
+        - fieldName: MediumBannerPhotoUrl
+          orderByExpression: String_order_by_exp
+        - fieldName: MediumPhotoUrl
+          orderByExpression: String_order_by_exp
+        - fieldName: MobilePhone
+          orderByExpression: String_order_by_exp
+        - fieldName: Name
+          orderByExpression: String_order_by_exp
+        - fieldName: Phone
+          orderByExpression: String_order_by_exp
+        - fieldName: PostalCode
+          orderByExpression: String_order_by_exp
+        - fieldName: ProfileId
+          orderByExpression: String_order_by_exp
+        - fieldName: ReceivesAdminInfoEmails
+          orderByExpression: Boolean_order_by_exp
+        - fieldName: ReceivesInfoEmails
+          orderByExpression: Boolean_order_by_exp
+        - fieldName: SmallBannerPhotoUrl
+          orderByExpression: String_order_by_exp
+        - fieldName: SmallPhotoUrl
+          orderByExpression: String_order_by_exp
+        - fieldName: State
+          orderByExpression: String_order_by_exp
+        - fieldName: Street
+          orderByExpression: String_order_by_exp
+        - fieldName: SystemModstamp
+          orderByExpression: Timestamp_order_by_exp
+        - fieldName: TimeZoneSidKey
+          orderByExpression: String_order_by_exp
+        - fieldName: Title
+          orderByExpression: String_order_by_exp
+        - fieldName: UserPermissionsMarketingUser
+          orderByExpression: Boolean_order_by_exp
+        - fieldName: UserPermissionsOfflineUser
+          orderByExpression: Boolean_order_by_exp
+        - fieldName: UserType
+          orderByExpression: String_order_by_exp
+        - fieldName: Username
+          orderByExpression: String_order_by_exp
+      orderableRelationships: []
+  graphql:
+    expressionTypeName: User_order_by_exp
+
+---
+kind: Model
+version: v2
+definition:
+  name: User
+  objectType: User
+  source:
+    dataConnectorName: myduckduckapi
+    collection: User
+  filterExpressionType: User_bool_exp
+  aggregateExpression: User_agg_exp
+  orderByExpression: User_order_by_exp
+  graphql:
+    selectMany:
+      queryRootField: User
+      subscription:
+        rootField: User
+    selectUniques: []
+    filterInputTypeName: User_filter_input
+    aggregate:
+      queryRootField: User_aggregate
+      subscription:
+        rootField: User_aggregate
+  description: No description available
+
+---
+kind: ModelPermissions
+version: v1
+definition:
+  modelName: User
+  permissions:
+    - role: admin
+      select:
+        filter: null
+        allowSubscriptions: true
+

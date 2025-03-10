@@ -1,0 +1,214 @@
+---
+kind: ObjectType
+version: v1
+definition:
+  name: OpportunityContactRole
+  description: No description available
+  fields:
+    - name: ContactId
+      type: String
+      description: No description available
+    - name: CreatedById
+      type: String
+      description: No description available
+    - name: CreatedDate
+      type: Timestamp
+      description: No description available
+    - name: Id
+      type: String
+      description: No description available
+    - name: IsDeleted
+      type: Boolean
+      description: No description available
+    - name: IsPrimary
+      type: Boolean
+      description: No description available
+    - name: LastModifiedById
+      type: String
+      description: No description available
+    - name: LastModifiedDate
+      type: Timestamp
+      description: No description available
+    - name: OpportunityId
+      type: String
+      description: No description available
+    - name: Role
+      type: String
+      description: No description available
+    - name: SystemModstamp
+      type: Timestamp
+      description: No description available
+  graphql:
+    typeName: OpportunityContactRole
+    inputTypeName: OpportunityContactRole_input
+  dataConnectorTypeMapping:
+    - dataConnectorName: myduckduckapi
+      dataConnectorObjectType: OpportunityContactRole
+
+---
+kind: TypePermissions
+version: v1
+definition:
+  typeName: OpportunityContactRole
+  permissions:
+    - role: admin
+      output:
+        allowedFields:
+          - ContactId
+          - CreatedById
+          - CreatedDate
+          - Id
+          - IsDeleted
+          - IsPrimary
+          - LastModifiedById
+          - LastModifiedDate
+          - OpportunityId
+          - Role
+          - SystemModstamp
+
+---
+kind: BooleanExpressionType
+version: v1
+definition:
+  name: OpportunityContactRole_bool_exp
+  operand:
+    object:
+      type: OpportunityContactRole
+      comparableFields:
+        - fieldName: ContactId
+          booleanExpressionType: String_bool_exp
+        - fieldName: CreatedById
+          booleanExpressionType: String_bool_exp
+        - fieldName: CreatedDate
+          booleanExpressionType: Timestamp_bool_exp
+        - fieldName: Id
+          booleanExpressionType: String_bool_exp
+        - fieldName: IsDeleted
+          booleanExpressionType: Boolean_bool_exp
+        - fieldName: IsPrimary
+          booleanExpressionType: Boolean_bool_exp
+        - fieldName: LastModifiedById
+          booleanExpressionType: String_bool_exp
+        - fieldName: LastModifiedDate
+          booleanExpressionType: Timestamp_bool_exp
+        - fieldName: OpportunityId
+          booleanExpressionType: String_bool_exp
+        - fieldName: Role
+          booleanExpressionType: String_bool_exp
+        - fieldName: SystemModstamp
+          booleanExpressionType: Timestamp_bool_exp
+      comparableRelationships: []
+  logicalOperators:
+    enable: true
+  isNull:
+    enable: true
+  graphql:
+    typeName: OpportunityContactRole_bool_exp
+
+---
+kind: AggregateExpression
+version: v1
+definition:
+  name: OpportunityContactRole_agg_exp
+  operand:
+    object:
+      aggregatedType: OpportunityContactRole
+      aggregatableFields:
+        - fieldName: ContactId
+          aggregateExpression: String_agg_exp
+        - fieldName: CreatedById
+          aggregateExpression: String_agg_exp
+        - fieldName: CreatedDate
+          aggregateExpression: Timestamp_agg_exp
+        - fieldName: Id
+          aggregateExpression: String_agg_exp
+        - fieldName: IsDeleted
+          aggregateExpression: Boolean_agg_exp
+        - fieldName: IsPrimary
+          aggregateExpression: Boolean_agg_exp
+        - fieldName: LastModifiedById
+          aggregateExpression: String_agg_exp
+        - fieldName: LastModifiedDate
+          aggregateExpression: Timestamp_agg_exp
+        - fieldName: OpportunityId
+          aggregateExpression: String_agg_exp
+        - fieldName: Role
+          aggregateExpression: String_agg_exp
+        - fieldName: SystemModstamp
+          aggregateExpression: Timestamp_agg_exp
+  count:
+    enable: true
+  graphql:
+    selectTypeName: OpportunityContactRole_agg_exp
+
+---
+kind: OrderByExpression
+version: v1
+definition:
+  name: OpportunityContactRole_order_by_exp
+  operand:
+    object:
+      orderedType: OpportunityContactRole
+      orderableFields:
+        - fieldName: ContactId
+          orderByExpression: String_order_by_exp
+        - fieldName: CreatedById
+          orderByExpression: String_order_by_exp
+        - fieldName: CreatedDate
+          orderByExpression: Timestamp_order_by_exp
+        - fieldName: Id
+          orderByExpression: String_order_by_exp
+        - fieldName: IsDeleted
+          orderByExpression: Boolean_order_by_exp
+        - fieldName: IsPrimary
+          orderByExpression: Boolean_order_by_exp
+        - fieldName: LastModifiedById
+          orderByExpression: String_order_by_exp
+        - fieldName: LastModifiedDate
+          orderByExpression: Timestamp_order_by_exp
+        - fieldName: OpportunityId
+          orderByExpression: String_order_by_exp
+        - fieldName: Role
+          orderByExpression: String_order_by_exp
+        - fieldName: SystemModstamp
+          orderByExpression: Timestamp_order_by_exp
+      orderableRelationships: []
+  graphql:
+    expressionTypeName: OpportunityContactRole_order_by_exp
+
+---
+kind: Model
+version: v2
+definition:
+  name: OpportunityContactRole
+  objectType: OpportunityContactRole
+  source:
+    dataConnectorName: myduckduckapi
+    collection: OpportunityContactRole
+  filterExpressionType: OpportunityContactRole_bool_exp
+  aggregateExpression: OpportunityContactRole_agg_exp
+  orderByExpression: OpportunityContactRole_order_by_exp
+  graphql:
+    selectMany:
+      queryRootField: OpportunityContactRole
+      subscription:
+        rootField: OpportunityContactRole
+    selectUniques: []
+    filterInputTypeName: OpportunityContactRole_filter_input
+    aggregate:
+      queryRootField: OpportunityContactRole_aggregate
+      subscription:
+        rootField: OpportunityContactRole_aggregate
+  description: No description available
+
+---
+kind: ModelPermissions
+version: v1
+definition:
+  modelName: OpportunityContactRole
+  permissions:
+    - role: admin
+      select:
+        filter: null
+        allowSubscriptions: true
+
