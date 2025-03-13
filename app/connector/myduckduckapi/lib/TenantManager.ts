@@ -686,7 +686,7 @@ export class TenantManager {
         await this.syncOpportunityContactRole();
         await this.syncOpportunityLineItem();
         await this.syncProduct2();
-        await this.syncTask();
+        // await this.syncTask();
         await this.syncUser();
 
         this.log(
