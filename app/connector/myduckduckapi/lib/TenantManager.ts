@@ -678,7 +678,7 @@ export class TenantManager {
         await this.syncLead();
         await this.syncAccount();
         await this.syncCampaign();
-        await this.syncCampaignMember();
+        // await this.syncCampaignMember();
         await this.syncContact();
         await this.syncContract();
         await this.syncEvent();
