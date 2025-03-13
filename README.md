@@ -57,3 +57,12 @@ The system maintains an isolated database and sync loop for every user, so that 
 Your Salesforce data is synced to a user specific database, and is used by PromptQL to run queries.
 
 Only data that your Salesforce user can access is synced to your database instance.
+
+# Hasura PromptQL app deployment
+
+edit the .env.cloud file
+
+ddn supergraph build create --no-build-connectors
+
+don't merge this branch to master
+rebase this branch on top of master
