@@ -19,7 +19,7 @@ const ERROR_BACKOFF_INTERVAL = 1000 * 60 * 2;
 const ERROR_RETRY_COUNT = 3;
 
 const API_VERSION = "v47.0";
-const INITIAL_SYNC_TIME = "2023-01-01T00:00:00Z"; // Default fallback if no local data
+const INITIAL_SYNC_TIME = "2024-01-01T00:00:00Z"; // Default fallback if no local data
 
 // Fields to query. You can customize as desired.
 // For picklist fields, simply treat them as strings in DuckDB.
