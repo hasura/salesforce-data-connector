@@ -1127,7 +1127,20 @@ export class TenantManager {
    */
   private async resetAllData() {
     await transaction(this.db, async (conn) => {
-      await conn.run("DELETE FROM leads");
+      // Delete data from all tables
+      await conn.run("DELETE FROM Lead");
+      await conn.run("DELETE FROM Account");
+      await conn.run("DELETE FROM Campaign");
+      await conn.run("DELETE FROM CampaignMember");
+      await conn.run("DELETE FROM Contact");
+      await conn.run("DELETE FROM Contract");
+      await conn.run("DELETE FROM Event");
+      await conn.run("DELETE FROM Opportunity");
+      await conn.run("DELETE FROM OpportunityContactRole");
+      await conn.run("DELETE FROM OpportunityLineItem");
+      await conn.run("DELETE FROM Product2");
+      await conn.run("DELETE FROM Task");
+      await conn.run("DELETE FROM User");
     });
   }
 
