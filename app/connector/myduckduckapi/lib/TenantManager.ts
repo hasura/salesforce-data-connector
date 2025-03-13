@@ -1265,7 +1265,7 @@ export class TenantManager {
             Type,
             Website
           )
-          VALUES (${Array(44).fill("?").join(",")})
+          VALUES (${Array(43).fill("?").join(",")})
           ON CONFLICT (Id) DO UPDATE SET
             AccountSource=excluded.AccountSource,
             AnnualRevenue=excluded.AnnualRevenue,
