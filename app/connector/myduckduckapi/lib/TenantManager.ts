@@ -74,7 +74,6 @@ const ACCOUNT_FIELDS = [
   "CreatedById",
   "CreatedDate",
   "Description",
-  "Fax",
   "Industry",
   "IsDeleted",
   "Jigsaw",
@@ -186,19 +185,14 @@ const CAMPAIGN_MEMBER_FIELDS = [
 const CONTACT_FIELDS = [
   "Id",
   "AccountId",
-  "AssistantName",
-  "AssistantPhone",
-  "Birthdate",
   "CreatedById",
   "CreatedDate",
   "Department",
-  "Description",
   "Email",
   "EmailBouncedDate",
   "EmailBouncedReason",
   "Fax",
   "FirstName",
-  "HomePhone",
   "IndividualId",
   "IsDeleted",
   "IsEmailBounced",
@@ -224,15 +218,6 @@ const CONTACT_FIELDS = [
   "MasterRecordId",
   "MobilePhone",
   "Name",
-  "OtherCity",
-  "OtherCountry",
-  "OtherGeocodeAccuracy",
-  "OtherLatitude",
-  "OtherLongitude",
-  "OtherPhone",
-  "OtherPostalCode",
-  "OtherState",
-  "OtherStreet",
   "OwnerId",
   "Phone",
   "PhotoUrl",
@@ -675,19 +660,22 @@ export class TenantManager {
     try {
       // Continuous sync loop
       while (this.syncState === SyncState.Running) {
-        await this.syncLead();
         await this.syncAccount();
         await this.syncCampaign();
-        // await this.syncCampaignMember();
         await this.syncContact();
         await this.syncContract();
         await this.syncEvent();
-        // await this.syncOpportunity();
         await this.syncOpportunityContactRole();
         await this.syncOpportunityLineItem();
         await this.syncProduct2();
-        // await this.syncTask();
         await this.syncUser();
+
+        await this.syncLead();
+
+        // Large tables disabled
+        // await this.syncCampaignMember();
+        // await this.syncOpportunity();
+        // await this.syncTask();
 
         this.log(
           `Completed sync. Waiting for ${
@@ -1235,7 +1223,6 @@ export class TenantManager {
             CreatedById,
             CreatedDate,
             Description,
-            Fax,
             Industry,
             IsDeleted,
             Jigsaw,
@@ -1265,7 +1252,7 @@ export class TenantManager {
             Type,
             Website
           )
-          VALUES (${Array(43).fill("?").join(",")})
+          VALUES (${Array(42).fill("?").join(",")})
           ON CONFLICT (Id) DO UPDATE SET
             AccountSource=excluded.AccountSource,
             AnnualRevenue=excluded.AnnualRevenue,
@@ -1280,7 +1267,6 @@ export class TenantManager {
             CreatedById=excluded.CreatedById,
             CreatedDate=excluded.CreatedDate,
             Description=excluded.Description,
-            Fax=excluded.Fax,
             Industry=excluded.Industry,
             IsDeleted=excluded.IsDeleted,
             Jigsaw=excluded.Jigsaw,
@@ -1324,7 +1310,6 @@ export class TenantManager {
           row.CreatedById,
           toDuckdbTimestamp(row.CreatedDate),
           row.Description,
-          row.Fax,
           row.Industry,
           row.IsDeleted?.toLowerCase?.() === "true",
           row.Jigsaw,
@@ -1691,19 +1676,14 @@ export class TenantManager {
           INSERT INTO Contact (
             Id,
             AccountId,
-            AssistantName,
-            AssistantPhone,
-            Birthdate,
             CreatedById,
             CreatedDate,
             Department,
-            Description,
             Email,
             EmailBouncedDate,
             EmailBouncedReason,
             Fax,
             FirstName,
-            HomePhone,
             IndividualId,
             IsDeleted,
             IsEmailBounced,
@@ -1729,15 +1709,6 @@ export class TenantManager {
             MasterRecordId,
             MobilePhone,
             Name,
-            OtherCity,
-            OtherCountry,
-            OtherGeocodeAccuracy,
-            OtherLatitude,
-            OtherLongitude,
-            OtherPhone,
-            OtherPostalCode,
-            OtherState,
-            OtherStreet,
             OwnerId,
             Phone,
             PhotoUrl,
@@ -1746,22 +1717,17 @@ export class TenantManager {
             SystemModstamp,
             Title
           )
-          VALUES (${Array(56).fill("?").join(",")})
+          VALUES (${Array(42).fill("?").join(",")})
           ON CONFLICT (Id) DO UPDATE SET
             AccountId=excluded.AccountId,
-            AssistantName=excluded.AssistantName,
-            AssistantPhone=excluded.AssistantPhone,
-            Birthdate=excluded.Birthdate,
             CreatedById=excluded.CreatedById,
             CreatedDate=excluded.CreatedDate,
             Department=excluded.Department,
-            Description=excluded.Description,
             Email=excluded.Email,
             EmailBouncedDate=excluded.EmailBouncedDate,
             EmailBouncedReason=excluded.EmailBouncedReason,
             Fax=excluded.Fax,
             FirstName=excluded.FirstName,
-            HomePhone=excluded.HomePhone,
             IndividualId=excluded.IndividualId,
             IsDeleted=excluded.IsDeleted,
             IsEmailBounced=excluded.IsEmailBounced,
@@ -1787,15 +1753,6 @@ export class TenantManager {
             MasterRecordId=excluded.MasterRecordId,
             MobilePhone=excluded.MobilePhone,
             Name=excluded.Name,
-            OtherCity=excluded.OtherCity,
-            OtherCountry=excluded.OtherCountry,
-            OtherGeocodeAccuracy=excluded.OtherGeocodeAccuracy,
-            OtherLatitude=excluded.OtherLatitude,
-            OtherLongitude=excluded.OtherLongitude,
-            OtherPhone=excluded.OtherPhone,
-            OtherPostalCode=excluded.OtherPostalCode,
-            OtherState=excluded.OtherState,
-            OtherStreet=excluded.OtherStreet,
             OwnerId=excluded.OwnerId,
             Phone=excluded.Phone,
             PhotoUrl=excluded.PhotoUrl,
@@ -1806,19 +1763,14 @@ export class TenantManager {
           `,
           row.Id,
           row.AccountId,
-          row.AssistantName,
-          row.AssistantPhone,
-          toDuckdbTimestamp(row.Birthdate),
           row.CreatedById,
           toDuckdbTimestamp(row.CreatedDate),
           row.Department,
-          row.Description,
           row.Email,
           toDuckdbTimestamp(row.EmailBouncedDate),
           row.EmailBouncedReason,
           row.Fax,
           row.FirstName,
-          row.HomePhone,
           row.IndividualId,
           row.IsDeleted?.toLowerCase?.() === "true",
           row.IsEmailBounced?.toLowerCase?.() === "true",
@@ -1844,15 +1796,6 @@ export class TenantManager {
           row.MasterRecordId,
           row.MobilePhone,
           row.Name,
-          row.OtherCity,
-          row.OtherCountry,
-          row.OtherGeocodeAccuracy,
-          parseFieldFloat(row.OtherLatitude),
-          parseFieldFloat(row.OtherLongitude),
-          row.OtherPhone,
-          row.OtherPostalCode,
-          row.OtherState,
-          row.OtherStreet,
           row.OwnerId,
           row.Phone,
           row.PhotoUrl,
